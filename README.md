@@ -11,4 +11,4 @@ Get list of emulators\
 Install KaPartner app in the emulator device
 
 In the terminal, run command
-`python3 -m robot -d Output --loglevel TRACE tests/open_application.robot`
+`python3 -m robot -d Output --loglevel TRACE tests/login_kapartner.robot`
