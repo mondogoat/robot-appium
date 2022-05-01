@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.8.1 on darwin)" generated="20220502 06:45:51.553" rpa="false">
+<suite id="s1" name="Open Application" source="/Users/codevelopr/PycharmProjects/robot-appium/tests/open_application.robot">
+<test id="s1-t1" name="Login with Unregistered Mobile Number">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=emulator-5554</arg>
+<arg>appPackage=com.nccc.qruser</arg>
+<arg>appActivity=host.exp.exponent.MainActivity</arg>
+<arg>automationName=Uiautomator2</arg>
+</arguments>
+<msg timestamp="20220502 06:45:51.930" level="TRACE">Arguments: [ 'http://localhost:4723/wd/hub' | platformName='Android' | deviceName='emulator-5554' | appPackage='com.nccc.qruser' | appActivity='host.exp.exponent.MainActivity' | automationName='Uiautomator2' ]</msg>
+<msg timestamp="20220502 06:45:51.938" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session {"capabilities": {"firstMatch": [{"platformName": "Android", "appium:deviceName": "emulator-5554", "appium:appPackage": "com.nccc.qruser", "appium:appActivity": "host.exp.exponent.MainActivity", "appium:automationName": "Uiautomator2"}]}, "desiredCapabilities": {"platformName": "Android", "deviceName": "emulator-5554", "appPackage": "com.nccc.qruser", "appActivity": "host.exp.exponent.MainActivity", "automationName": "Uiautomator2"}}</msg>
+<msg timestamp="20220502 06:45:51.938" level="DEBUG">Starting new HTTP connection (1): 127.0.0.1:4723</msg>
+<msg timestamp="20220502 06:46:00.686" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session HTTP/1.1" 200 906</msg>
+<msg timestamp="20220502 06:46:00.687" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220502 06:46:00.690" level="DEBUG">Opened application with session id 29021c69-7d66-4294-be29-74c6a52d5b22</msg>
+<msg timestamp="20220502 06:46:00.690" level="TRACE">Return: 1</msg>
+<status status="PASS" starttime="20220502 06:45:51.930" endtime="20220502 06:46:00.690"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${LOGIN-BUTTON}</arg>
+</arguments>
+<msg timestamp="20220502 06:46:00.691" level="TRACE">Arguments: [ '//android.widget.TextView[@text="LOGIN"]' ]</msg>
+<msg timestamp="20220502 06:46:00.691" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/29021c69-7d66-4294-be29-74c6a52d5b22/elements {"using": "xpath", "value": "//android.widget.TextView[@text=\"LOGIN\"]"}</msg>
+<msg timestamp="20220502 06:46:01.480" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/29021c69-7d66-4294-be29-74c6a52d5b22/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220502 06:46:01.481" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220502 06:46:01.683" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/29021c69-7d66-4294-be29-74c6a52d5b22/elements {"using": "xpath", "value": "//android.widget.TextView[@text=\"LOGIN\"]"}</msg>
+<msg timestamp="20220502 06:46:02.515" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/29021c69-7d66-4294-be29-74c6a52d5b22/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220502 06:46:02.516" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220502 06:46:02.721" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/29021c69-7d66-4294-be29-74c6a52d5b22/elements {"using": "xpath", "value": "//android.widget.TextView[@text=\"LOGIN\"]"}</msg>
+<msg timestamp="20220502 06:46:02.893" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/29021c69-7d66-4294-be29-74c6a52d5b22/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220502 06:46:02.894" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220502 06:46:03.095" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/29021c69-7d66-4294-be29-74c6a52d5b22/elements {"using": "xpath", "value": "//android.widget.TextView[@text=\"LOGIN\"]"}</msg>
+<msg timestamp="20220502 06:46:03.279" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/29021c69-7d66-4294-be29-74c6a52d5b22/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220502 06:46:03.280" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220502 06:46:03.483" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/29021c69-7d66-4294-be29-74c6a52d5b22/elements {"using": "xpath", "value": "//android.widget.TextView[@text=\"LOGIN\"]"}</msg>
+<msg timestamp="20220502 06:46:03.635" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/29021c69-7d66-4294-be29-74c6a52d5b22/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220502 06:46:03.635" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220502 06:46:03.839" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/29021c69-7d66-4294-be29-74c6a52d5b22/elements {"using": "xpath", "value": "//android.widget.TextView[@text=\"LOGIN\"]"}</msg>
+<msg timestamp="20220502 06:46:04.156" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/29021c69-7d66-4294-be29-74c6a52d5b22/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220502 06:46:04.156" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220502 06:46:04.361" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/29021c69-7d66-4294-be29-74c6a52d5b22/elements {"using": "xpath", "value": "//android.widget.TextView[@text=\"LOGIN\"]"}</msg>
+<msg timestamp="20220502 06:46:04.511" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/29021c69-7d66-4294-be29-74c6a52d5b22/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220502 06:46:04.511" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220502 06:46:04.712" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/29021c69-7d66-4294-be29-74c6a52d5b22/elements {"using": "xpath", "value": "//android.widget.TextView[@text=\"LOGIN\"]"}</msg>
+<msg timestamp="20220502 06:46:04.901" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/29021c69-7d66-4294-be29-74c6a52d5b22/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220502 06:46:04.902" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220502 06:46:05.107" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/29021c69-7d66-4294-be29-74c6a52d5b22/elements {"using": "xpath", "value": "//android.widget.TextView[@text=\"LOGIN\"]"}</msg>
+<msg timestamp="20220502 06:46:05.233" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/29021c69-7d66-4294-be29-74c6a52d5b22/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220502 06:46:05.233" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220502 06:46:05.439" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/29021c69-7d66-4294-be29-74c6a52d5b22/elements {"using": "xpath", "value": "//android.widget.TextView[@text=\"LOGIN\"]"}</msg>
+<msg timestamp="20220502 06:46:05.514" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/29021c69-7d66-4294-be29-74c6a52d5b22/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220502 06:46:05.514" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220502 06:46:05.718" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/29021c69-7d66-4294-be29-74c6a52d5b22/elements {"using": "xpath", "value": "//android.widget.TextView[@text=\"LOGIN\"]"}</msg>
+<msg timestamp="20220502 06:46:05.818" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/29021c69-7d66-4294-be29-74c6a52d5b22/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220502 06:46:05.818" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220502 06:46:05.952" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/29021c69-7d66-4294-be29-74c6a52d5b22/source {}</msg>
+<msg timestamp="20220502 06:46:06.016" level="DEBUG">http://127.0.0.1:4723 "GET /wd/hub/session/29021c69-7d66-4294-be29-74c6a52d5b22/source HTTP/1.1" 200 4086</msg>
+<msg timestamp="20220502 06:46:06.016" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220502 06:46:06.018" level="INFO">&lt;?xml version='1.0' encoding='UTF-8' standalone='yes' ?&gt;
+&lt;hierarchy index="0" class="hierarchy" rotation="0" width="1080" height="2088"&gt;
+  &lt;android.widget.FrameLayout index="0" package="com.nccc.qruser" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2088]" displayed="true"&gt;
+    &lt;android.widget.LinearLayout index="0" package="com.nccc.qruser" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2088]" displayed="true"&gt;
+      &lt;android.widget.FrameLayout index="0" package="com.nccc.qruser" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2088]" displayed="true"&gt;
+        &lt;android.widget.LinearLayout index="0" package="com.nccc.qruser" class="android.widget.LinearLayout" text="" resource-id="com.nccc.qruser:id/action_bar_root" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2088]" displayed="true"&gt;
+          &lt;android.widget.FrameLayout index="0" package="com.nccc.qruser" class="android.widget.FrameLayout" text="" resource-id="android:id/content" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2088]" displayed="true"&gt;
+            &lt;android.widget.FrameLayout index="0" package="com.nccc.qruser" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2088]" displayed="true"&gt;
+              &lt;android.widget.RelativeLayout index="1" package="com.nccc.qruser" class="android.widget.RelativeLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2088]" displayed="true"&gt;
+                &lt;android.widget.RelativeLayout index="0" package="com.nccc.qruser" class="android.widget.RelativeLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2088]" displayed="true"&gt;
+                  &lt;android.widget.ImageView index="0" package="com.nccc.qruser" class="android.widget.ImageView" text="" resource-id="com.nccc.qruser:id/background_image_view" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2088]" displayed="true" /&gt;
+                &lt;/android.widget.RelativeLayout&gt;
+              &lt;/android.widget.RelativeLayout&gt;
+            &lt;/android.widget.FrameLayout&gt;
+          &lt;/android.widget.FrameLayout&gt;
+        &lt;/android.widget.LinearLayout&gt;
+      &lt;/android.widget.FrameLayout&gt;
+    &lt;/android.widget.LinearLayout&gt;
+  &lt;/android.widget.FrameLayout&gt;
+&lt;/hierarchy&gt;</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220502 06:46:06.019" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20220502 06:46:06.020" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/29021c69-7d66-4294-be29-74c6a52d5b22/screenshot {}</msg>
+<msg timestamp="20220502 06:46:06.567" level="DEBUG">http://127.0.0.1:4723 "GET /wd/hub/session/29021c69-7d66-4294-be29-74c6a52d5b22/screenshot HTTP/1.1" 200 70530</msg>
+<msg timestamp="20220502 06:46:06.568" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220502 06:46:06.574" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220502 06:46:06.574" level="TRACE">Return: '/Users/codevelopr/PycharmProjects/robot-appium/Output/appium-screenshot-1.png'</msg>
+<status status="PASS" starttime="20220502 06:46:06.019" endtime="20220502 06:46:06.574"></status>
+</kw>
+<msg timestamp="20220502 06:46:06.575" level="FAIL">Element '//android.widget.TextView[@text="LOGIN"]' did not appear in 5 seconds</msg>
+<msg timestamp="20220502 06:46:06.575" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-68&gt;", line 2, in wait_until_page_contains_element
+  File "/Users/codevelopr/Library/Python/3.8/lib/python/site-packages/AppiumLibrary/keywords/keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "/Users/codevelopr/Library/Python/3.8/lib/python/site-packages/AppiumLibrary/keywords/keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "/Users/codevelopr/Library/Python/3.8/lib/python/site-packages/AppiumLibrary/keywords/_waiting.py", line 88, in wait_until_page_contains_element
+    self._wait_until(timeout, error, self._is_element_present, locator)
+  File "/Users/codevelopr/Library/Python/3.8/lib/python/site-packages/AppiumLibrary/keywords/_waiting.py", line 122, in _wait_until
+    self._wait_until_no_error(timeout, wait_func)
+  File "/Users/codevelopr/Library/Python/3.8/lib/python/site-packages/AppiumLibrary/keywords/_waiting.py", line 133, in _wait_until_no_error
+    raise AssertionError(timeout_error)</msg>
+<status status="FAIL" starttime="20220502 06:46:00.691" endtime="20220502 06:46:06.575"></status>
+</kw>
+<status status="FAIL" starttime="20220502 06:45:51.929" endtime="20220502 06:46:06.575" critical="yes">Element '//android.widget.TextView[@text="LOGIN"]' did not appear in 5 seconds</status>
+</test>
+<status status="FAIL" starttime="20220502 06:45:51.558" endtime="20220502 06:46:06.578"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Open Application">Open Application</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
