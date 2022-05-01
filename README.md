@@ -8,8 +8,7 @@ Get list of emulators\
 ...Then launch the emulator\
 `emulator -avd {EMULATOR_NAME}`
 
-...In another terminal window, run appium:\
-`appium`
+Install KaPartner app in the emulator device
 
-In the terminal, run command\
-`python3 -m robot -d Output --loglevel TRACE tests/open_application.robot` 
+In the terminal, run command
+`python3 -m robot -d Output --loglevel TRACE tests/open_application.robot`
