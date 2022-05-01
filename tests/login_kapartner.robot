@@ -7,6 +7,9 @@ ${LOGIN-BUTTON}     //android.widget.TextView[@text="LOGIN"]
 ${MOBILE-INPUT-BOX}     //android.widget.EditText[@text="+63"]
 ${UNREGISTERED-HEADER}      //android.widget.TextView[@text="Unregistered"]
 
+#TEST DATA
+${UNREGISTERED-MOBILE-NUMBER}       9190000001
+
 
 *** Test Cases ***
 Login with Unregistered Mobile Number
@@ -14,7 +17,7 @@ Login with Unregistered Mobile Number
     Wait Until Page Contains Element    ${LOGIN-BUTTON}
     Tap     ${MOBILE-INPUT-BOX}
     Is Keyboard Shown
-    Input Value     ${MOBILE-INPUT-BOX}      9190000001
+    Input Value     ${MOBILE-INPUT-BOX}      ${UNREGISTERED-MOBILE-NUMBER}
     Tap     ${LOGIN-BUTTON}
     Wait Until Page Contains Element  ${UNREGISTERED-HEADER}
     Element Should Be Visible  ${UNREGISTERED-HEADER}
