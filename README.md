@@ -1,5 +1,14 @@
 # robot-appium
 
+Prerequisites:
+
+python3\
+RobotFramework\
+RobotFramework AppiumLibrary\
+Appium\
+AndroidStudio (emulator)
+
+
 How to Run:
 
 Get list of emulators\
